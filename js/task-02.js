@@ -15,6 +15,6 @@ const createLi = ingredients.map((elem) => {
   li.textContent = elem;
 
   li.classList.add('item');
-
-  table.appendChild(li);
+  return li;
 });
+table.append(...createLi);
